@@ -21,7 +21,7 @@ const autoscroll = () => {
     const $newMessage = $messages.lastElementChild
 
     const newMessageStyles = getComputedStyle($newMessage)
-    const newMessageMargin = parseInt($newMessageStyles.marginBottom)
+    const newMessageMargin = parseInt(newMessageStyles.marginBottom)
     const newMessageHeight = $newMessage.offsetHeight + newMessageMargin
 
     const visibleHeight = $messages.offsetHeight
